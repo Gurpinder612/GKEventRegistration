@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <link rel="stylesheet" type="text/css" href="style.css"> 
+<script src="script.js"></script>
+<title>Contact Form</title>
+</head>
+
+<body>
+
+    <header class="body">
+    </header>
+
+    <div id="home">
+      <center><p>WELCOME TO EVENT</p><center>
+      <br />
+      <button onclick="showDiv('form')">New Registration</button>
+    </div>
+    <div id="error"></div>
+    <div id="form" style="display: none;">
+      <center>Event Registration Form</center>
+      <br>
+      <button onclick="showDiv('home')">Back</button>
+       <form id="myForm" method="GET" name="myForm">
+          <label>First Name</label>
+          <input id="fname" name="fname" placeholder="Type Here">
+
+          <label>Last Name</label>
+          <input id="lname" name="lname" placeholder="Type Here">
+
+          <label>Address</label>
+          <input id="add" name="address" placeholder="Type Here">
+
+          <label>City</label>
+          <input id="city" name="city" placeholder="Type Here">
+
+          <label>Province</label>
+          <input id="pro" name="province" placeholder="Type Here">
+
+          <label>Postal Code</label>
+          <input id="pos" name="pcode" placeholder="Type Here">
+
+          <label>Phone Number</label>
+          <input id="phone" name="phone" placeholder="Type Here">
+                  
+          <label>Email Address</label>
+          <input id="email" name="email" type="email" placeholder="Type Here">
+                  
+		  <br><br>
+		 <label for="duration">Event Duration: </label>
+
+		<select name="duration" id="dur">
+		  <option value="#">-----Select-----</option>		
+		  <option value="350$">First Day</option>
+		  <option value="450$">Second Day</option>
+		  <option value="750$">Both Day</option>
+		</select> 
+           <br>
+		   <br>
+		<center>
+         <button type="button" onClick="savePerson()">Submit</button>       
+		 </center>
+		    <br>
+		   <br>      
+        </form>
+    </div>
+
+    <div id="display" style="display: none;">
+      <center><p>Booking Confirmation</p></center>
+      <br>
+      <button onclick="showDiv('home')">Home</button>
+	  <center>
+	  <p>You have registered successfully</p>
+	  <div id="person"></div>
+
+	  <center>
+    </div>
+
+
+    <!-- <section class="body">
+       
+    </section> -->
+
+    <footer class="body">
+    </footer>
+
+</body>
+
+</html>
